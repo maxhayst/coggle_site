@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-key="aboutPageTitle">Про мене</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="language-switcher">
+        <button onclick="changeLanguage('uk')" class="lang-btn active" id="lang-uk">УКР</button>
+        <button onclick="changeLanguage('en')" class="lang-btn" id="lang-en">ENG</button>
+    </div>
+
+    <div class="container">
+        <header class="page-header">
+            <button onclick="window.location.href='main.html'" class="back-btn">← <span data-lang-key="backBtn">Назад</span></button>
+            <h1 data-lang-key="aboutMeTitle">Про мене</h1>
+            <button onclick="signOut()" class="logout-btn" data-lang-key="logoutBtn">Вийти</button>
+        </header>
+
+        <main class="content-page">
+            <div class="about-section">
+                <div class="profile-header">
+                    <div class="profile-icon">👨‍💻</div>
+                    <h2>Хаустович Максим Ярославович</h2>
+                    <p class="subtitle">Khaustovych Maksym Yaroslavovych</p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>📧 <span data-lang-key="contactEmail">Електронна пошта</span></h3>
+                        <p><a href="mailto:maxhayst11@gmail.com">maxhayst11@gmail.com</a></p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>📱 <span data-lang-key="contactPhone">Телефон</span></h3>
+                        <p><a href="tel:+380975549637">+380 97 554 96 37</a></p>
+                    </div>
+
+                    <div class="info-card full-width">
+                        <h3>🎓 <span data-lang-key="educationTitle">Освіта</span></h3>
+                        <p data-lang-key="educationInstitution">
+                            Бердичівський фаховий коледж промисловості, економіки та права (БФКПЕП)
+                        </p>
+                        <p data-lang-key="educationDetails">
+                            Студент першого курсу спеціальності "Інженерія програмного забезпечення"
+                        </p>
+                    </div>
+
+                    <div class="info-card full-width">
+                        <h3>💼 <span data-lang-key="experienceTitle">Досвід</span></h3>
+                        <p data-lang-key="experienceText">
+                            Початківець у сфері програмної інженерії. Вивчаю веб-розробку, 
+                            створення застосунків та сучасні технології програмування. 
+                            Активно розвиваю навички через практичні роботи та проекти.
+                        </p>
+                    </div>
+
+                    <div class="info-card full-width">
+                        <h3>🎯 <span data-lang-key="skillsTitle">Навички та інтереси</span></h3>
+                        <ul class="skills-list">
+                            <li>HTML, CSS, JavaScript</li>
+                            <li data-lang-key="skill1">Веб-розробка</li>
+                            <li data-lang-key="skill2">Створення інтерфейсів</li>
+                            <li data-lang-key="skill3">Робота з інструментами візуалізації (Coggle)</li>
+                            <li data-lang-key="skill4">Базові знання програмування</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p data-lang-key="footerText">© 2024 Хаустович Максим Ярославович</p>
+        </footer>
+    </div>
+
+    <script src="lang.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>

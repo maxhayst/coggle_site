@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-key="loginTitle">Вхід - Персональний сайт</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-page">
+    <div class="language-switcher">
+        <button onclick="changeLanguage('uk')" class="lang-btn active" id="lang-uk">УКР</button>
+        <button onclick="changeLanguage('en')" class="lang-btn" id="lang-en">ENG</button>
+    </div>
+
+    <div class="login-container">
+        <div class="login-box">
+            <h1 data-lang-key="welcomeTitle">Ласкаво просимо</h1>
+            <p data-lang-key="loginSubtitle">Персональний сайт Хаустовича Максима</p>
+            
+            <div class="login-form">
+                <h2 data-lang-key="signInPrompt">Увійдіть для продовження</h2>
+                <p data-lang-key="signInDescription">Будь ласка, авторизуйтесь через Google</p>
+                
+                <div id="g_id_onload"
+                     data-client_id="YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com"
+                     data-callback="handleCredentialResponse">
+                </div>
+                
+                <button onclick="signInWithGoogle()" class="google-btn">
+                    <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google">
+                    <span data-lang-key="signInButton">Увійти через Google</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="lang.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
+                    Sign in with Google
+                </button>
+            </div>
+        </main>
+
+        <footer>
+            <p>Practical Work - Program Engineering Student</p>
+        </footer>
+    </div>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="auth.js"></script>
+</body>
+</html>

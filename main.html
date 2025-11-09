@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-key="mainTitle">Головна - Персональний сайт</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="language-switcher">
+        <button onclick="changeLanguage('uk')" class="lang-btn active" id="lang-uk">УКР</button>
+        <button onclick="changeLanguage('en')" class="lang-btn" id="lang-en">ENG</button>
+    </div>
+
+    <div class="container">
+        <header class="main-header">
+            <h1 data-lang-key="siteTitle">Персональний сайт</h1>
+            <div class="user-info">
+                <span id="userName">Вітаємо</span>
+                <button onclick="signOut()" class="logout-btn" data-lang-key="logoutBtn">Вийти</button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="welcome-section">
+                <h2 data-lang-key="mainWelcome">Вітаю на моєму сайті!</h2>
+                <p data-lang-key="mainDescription">Оберіть розділ для перегляду інформації</p>
+            </div>
+
+            <div class="navigation-cards">
+                <div class="nav-card" onclick="window.location.href='about.html'">
+                    <div class="card-icon">👤</div>
+                    <h3 data-lang-key="aboutMeTitle">Про мене</h3>
+                    <p data-lang-key="aboutMeDesc">Персональна інформація та контакти</p>
+                </div>
+
+                <div class="nav-card" onclick="window.location.href='practical.html'">
+                    <div class="card-icon">📚</div>
+                    <h3 data-lang-key="practicalTitle">Практична робота №5</h3>
+                    <p data-lang-key="practicalDesc">Робота з Coggle - інструментом для створення ментальних карт</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p data-lang-key="footerText">© 2024 Хаустович Максим Ярославович</p>
+        </footer>
+    </div>
+
+    <script src="lang.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>

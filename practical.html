@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-key="practicalPageTitle">Практична робота №5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="language-switcher">
+        <button onclick="changeLanguage('uk')" class="lang-btn active" id="lang-uk">УКР</button>
+        <button onclick="changeLanguage('en')" class="lang-btn" id="lang-en">ENG</button>
+    </div>
+
+    <div class="container">
+        <header class="page-header">
+            <button onclick="window.location.href='main.html'" class="back-btn">← <span data-lang-key="backBtn">Назад</span></button>
+            <h1 data-lang-key="practicalTitle">Практична робота №5</h1>
+            <button onclick="signOut()" class="logout-btn" data-lang-key="logoutBtn">Вийти</button>
+        </header>
+
+        <main class="content-page">
+            <div class="practical-section">
+                <h2 data-lang-key="coggleTitle">Coggle.com - Інструмент для створення ментальних карт</h2>
+                
+                <div class="description-block">
+                    <h3 data-lang-key="whatIsCoggle">Що таке Coggle?</h3>
+                    <p data-lang-key="coggleDescription">
+                        Coggle - це онлайн-інструмент для створення красивих ментальних карт (mind maps). 
+                        Він дозволяє організувати ваші думки, ідеї та інформацію у візуальному форматі, 
+                        що полегшує розуміння складних концепцій та зв'язків між ними.
+                    </p>
+                </div>
+
+                <div class="features-block">
+                    <h3 data-lang-key="coggleFeatures">Основні можливості Coggle:</h3>
+                    <ul class="features-list">
+                        <li data-lang-key="feature1">📝 Інтуїтивно зрозумілий інтерфейс для створення діаграм</li>
+                        <li data-lang-key="feature2">👥 Спільна робота в режимі реального часу</li>
+                        <li data-lang-key="feature3">🎨 Кольорові та красиві візуальні діаграми</li>
+                        <li data-lang-key="feature4">💾 Експорт у різні формати (PDF, PNG, текст)</li>
+                        <li data-lang-key="feature5">🔗 Можливість вбудовування карт на веб-сайти</li>
+                        <li data-lang-key="feature6">☁️ Доступ з будь-якого пристрою через браузер</li>
+                        <li data-lang-key="feature7">🔄 Автоматичне збереження змін</li>
+                    </ul>
+                </div>
+
+                <div class="usage-block">
+                    <h3 data-lang-key="coggleUsage">Застосування Coggle:</h3>
+                    <p data-lang-key="usageDescription">
+                        Ментальні карти можна використовувати для планування проектів, конспектування, 
+                        мозкового штурму, структурування інформації для навчання, створення презентацій 
+                        та багатьох інших завдань.
+                    </p>
+                </div>
+
+                <div class="video-section">
+                    <h3 data-lang-key="videoTitle">Відео-інструкція: Як користуватися Coggle</h3>
+                    <div class="video-placeholder">
+                        <div class="placeholder-content">
+                            <span class="video-icon">🎥</span>
+                            <p data-lang-key="videoPlaceholder">Тут буде розміщено відео-інструкцію</p>
+                            <small data-lang-key="videoNote">Вставте URL вашого відео у код нижче</small>
+                        </div>
+                        <!-- Замініть коментар на ваше відео: -->
+                        <!-- <iframe width="100%" height="480" src="YOUR_VIDEO_URL" frameborder="0" allowfullscreen></iframe> -->
+                    </div>
+                </div>
+
+                <div class="mindmap-section">
+                    <h3 data-lang-key="mindmapTitle">Приклад ментальної карти</h3>
+                    <p data-lang-key="mindmapDescription">
+                        Нижче представлена інтерактивна ментальна карта, створена в Coggle. 
+                        Ви можете переглядати гілки та досліджувати зв'язки між елементами.
+                    </p>
+                    <div class="iframe-wrapper">
+                        <iframe width='853' height='480' 
+                                src='https://embed.coggle.it/diagram/aQ8B_4MU2FNAMwz8/TULXJdc9WoCBqLRysFccbVfrTpvFzVK9vQ_J_kLrBn0' 
+                                frameborder='0' 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="steps-block">
+                    <h3 data-lang-key="stepsTitle">Як почати роботу з Coggle:</h3>
+                    <ol class="steps-list">
+                        <li data-lang-key="step1">Перейдіть на сайт <a href="https://coggle.it" target="_blank">coggle.it</a></li>
+                        <li data-lang-key="step2">Зареєструйтесь або увійдіть через Google</li>
+                        <li data-lang-key="step3">Натисніть кнопку "Create Diagram" (Створити діаграму)</li>
+                        <li data-lang-key="step4">Додайте центральну ідею та розгалужуйте від неї</li>
+                        <li data-lang-key="step5">Використовуйте кольори та іконки для покращення візуалізації</li>
+                        <li data-lang-key="step6">Збережіть та поділіться вашою ментальною картою</li>
+                    </ol>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p data-lang-key="footerText">© 2024 Хаустович Максим Ярославович</p>
+        </footer>
+    </div>
+
+    <script src="lang.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
